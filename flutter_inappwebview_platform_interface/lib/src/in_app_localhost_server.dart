@@ -139,7 +139,7 @@ class DefaultInAppLocalhostServer extends PlatformInAppLocalhostServer {
 
   @override
   bool isRunning() {
-    return this._server != null;
+    return this._started;
   }
 
   ContentType _getContentTypeFromMimeType(String mimeType) {
